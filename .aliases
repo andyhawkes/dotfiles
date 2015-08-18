@@ -142,3 +142,11 @@ alias reload="exec $SHELL -l"
 # Boot2docker helpers
 alias b2d="boot2docker"
 alias dk="docker"
+
+# McDonald's project helpers
+alias mcdbuild="cd ~/projects/mcdonalds/happy-studio-web && mvn clean install -Ddocker.skip=false"
+alias mcdstart="cd ~/projects/mcdonalds/happy-studio-web && docker start happy-studio-docker_mysql && docker start happy-studio-docker_magnolia && docker start happy-studio-docker_assets && docker start happy-studio-docker_nginx && open http://dockerhost:8075/happy-studio/gb/en/"
+alias mcdstop="cd ~/projects/mcdonalds/happy-studio-web && docker stop happy-studio-docker_nginx && docker stop happy-studio-docker_assets && docker stop happy-studio-docker_magnolia && docker stop happy-studio-docker_mysql"
+
+# UUID generation in lowercase
+alias uuid="uuidgen | tr [:upper:] [:lower:]"
