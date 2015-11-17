@@ -257,3 +257,9 @@ function multiperf {
         perf $i;
     done
 }
+
+# Clone a website recursively
+function clonesite {
+    echo "Cloning "$1;
+    wget -r -np -k $1
+}
