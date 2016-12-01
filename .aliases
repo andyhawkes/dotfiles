@@ -145,3 +145,14 @@ alias dk="docker"
 
 # UUID generation in lowercase
 alias uuid="uuidgen | tr [:upper:] [:lower:]"
+
+# Apache config test
+alias apachetest="sudo apachectl -t"
+
+# SonarQube
+alias sq="/Applications/SonarQube/sonarqube-6.1/bin/macosx-universal-64/sonar.sh"
+alias sqscan="/Applications/SonarQube/sonar-scanner-2.8/bin/sonar-scanner"
+
+# Repair permissions
+alias vdp="sudo /usr/libexec/repair_packages --verify --standard-pkgs /"
+alias rdp="sudo /usr/libexec/repair_packages --repair --standard-pkgs --volume /"
